@@ -55,7 +55,7 @@ export function AIChat({
         {error ? <div className="text-[10px] text-red-300">{error}</div> : null}
         <div className="flex justify-end">
           <button
-            className="rounded border border-cyber-cyan/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cyber-cyan disabled:cursor-not-allowed disabled:opacity-50"
+            className="rounded border border-cyber-cyan/60 bg-cyber-cyan/20 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cyber-cyan hover:bg-cyber-cyan/30 disabled:cursor-not-allowed disabled:opacity-50"
             onClick={onSubmit}
             disabled={loading || value.trim().length === 0}
           >

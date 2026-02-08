@@ -7,7 +7,10 @@ const robotoMono = Roboto_Mono({ subsets: ["latin"], variable: "--font-roboto-mo
 
 export const metadata = {
   title: "Argus",
-  description: "Know what governments need before they post the RFP."
+  description: "Know what governments need before they post the RFP.",
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({

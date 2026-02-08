@@ -204,7 +204,7 @@ export function ArgusDashboard() {
                 </div>
                 <div className="flex justify-end">
                   <button
-                    className="rounded border border-cyber-cyan/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cyber-cyan"
+                    className="rounded border border-cyber-cyan/60 bg-cyber-cyan/20 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cyber-cyan hover:bg-cyber-cyan/30"
                     onClick={() => setActiveMatch(null)}
                     aria-label="Close signal detail"
                   >
