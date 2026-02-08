@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="argusGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00D9FF" />
+      <stop offset="1" stop-color="#0A1929" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0A1929" />
+  <circle cx="64" cy="64" r="46" fill="url(#argusGlow)" opacity="0.25" />
+  <circle cx="64" cy="64" r="36" fill="none" stroke="#00D9FF" stroke-width="4" />
+  <path d="M64 34c16.6 0 30 13.4 30 30s-13.4 30-30 30-30-13.4-30-30 13.4-30 30-30z" fill="none" stroke="#00D9FF" stroke-width="2" opacity="0.6" />
+  <path d="M64 52c6.6 0 12 5.4 12 12s-5.4 12-12 12-12-5.4-12-12 5.4-12 12-12z" fill="#00D9FF" />
+  <circle cx="64" cy="64" r="4" fill="#0A1929" />
+</svg>

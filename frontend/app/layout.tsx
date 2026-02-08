@@ -9,7 +9,7 @@ export const metadata = {
   title: "Argus",
   description: "Know what governments need before they post the RFP.",
   icons: {
-    icon: "/favicon.ico"
+    icon: "/icon.svg"
   }
 };
 
