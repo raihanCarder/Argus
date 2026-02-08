@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ca-toronto-minutes",
+    "title": "Toronto Council Minutes",
+    "type": "minutes",
+    "url": "https://www.toronto.ca/city-government/council/",
+    "queries": [
+      "Toronto city council minutes PDF",
+      "Toronto council agenda minutes PDF"
+    ],
+    "location": {
+      "city": "Toronto",
+      "region": "Ontario",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lng": -79.3832
+    }
+  },
+  {
+    "id": "ca-vancouver-press",
+    "title": "City of Vancouver Press Releases",
+    "type": "press_release",
+    "url": "https://vancouver.ca/news-calendar.aspx",
+    "queries": [
+      "Vancouver city press release",
+      "City of Vancouver news release"
+    ],
+    "location": {
+      "city": "Vancouver",
+      "region": "British Columbia",
+      "country": "Canada",
+      "lat": 49.2827,
+      "lng": -123.1207
+    }
+  },
+  {
+    "id": "us-austin-minutes",
+    "title": "Austin City Council Minutes",
+    "type": "minutes",
+    "url": "https://www.austintexas.gov/department/city-council",
+    "queries": [
+      "Austin city council minutes PDF",
+      "Austin council agenda minutes PDF"
+    ],
+    "location": {
+      "city": "Austin",
+      "region": "Texas",
+      "country": "United States",
+      "lat": 30.2672,
+      "lng": -97.7431
+    }
+  },
+  {
+    "id": "us-seattle-plan",
+    "title": "Seattle Strategic Plan",
+    "type": "plan",
+    "url": "https://www.seattle.gov/",
+    "queries": [
+      "Seattle strategic plan PDF",
+      "Seattle government plan PDF"
+    ],
+    "location": {
+      "city": "Seattle",
+      "region": "Washington",
+      "country": "United States",
+      "lat": 47.6062,
+      "lng": -122.3321
+    }
+  },
+  {
+    "id": "us-newyork-press",
+    "title": "NYC Government Press Releases",
+    "type": "press_release",
+    "url": "https://www.nyc.gov/",
+    "queries": [
+      "NYC press release government",
+      "NYC city press release"
+    ],
+    "location": {
+      "city": "New York",
+      "region": "New York",
+      "country": "United States",
+      "lat": 40.7128,
+      "lng": -74.006
+    }
+  },
+  {
+    "id": "uk-london-press",
+    "title": "Mayor of London Press Releases",
+    "type": "press_release",
+    "url": "https://www.london.gov.uk/",
+    "queries": [
+      "Mayor of London press release",
+      "London government press release"
+    ],
+    "location": {
+      "city": "London",
+      "region": "England",
+      "country": "United Kingdom",
+      "lat": 51.5074,
+      "lng": -0.1278
+    }
+  },
+  {
+    "id": "uk-manchester-plan",
+    "title": "Manchester City Strategic Plan",
+    "type": "plan",
+    "url": "https://www.manchester.gov.uk/",
+    "queries": [
+      "Manchester city strategic plan PDF",
+      "Manchester government plan PDF"
+    ],
+    "location": {
+      "city": "Manchester",
+      "region": "England",
+      "country": "United Kingdom",
+      "lat": 53.4808,
+      "lng": -2.2426
+    }
+  },
+  {
+    "id": "fr-paris-minutes",
+    "title": "Paris City Council Minutes",
+    "type": "minutes",
+    "url": "https://www.paris.fr/",
+    "queries": [
+      "Conseil de Paris compte rendu PDF",
+      "Paris city council minutes PDF"
+    ],
+    "location": {
+      "city": "Paris",
+      "region": "Ile-de-France",
+      "country": "France",
+      "lat": 48.8566,
+      "lng": 2.3522
+    }
+  },
+  {
+    "id": "de-berlin-plan",
+    "title": "Berlin Government Plan",
+    "type": "plan",
+    "url": "https://www.berlin.de/",
+    "queries": [
+      "Berlin city strategic plan PDF",
+      "Berlin government plan PDF"
+    ],
+    "location": {
+      "city": "Berlin",
+      "region": "Berlin",
+      "country": "Germany",
+      "lat": 52.52,
+      "lng": 13.405
+    }
+  },
+  {
+    "id": "nl-amsterdam-plan",
+    "title": "Amsterdam Government Plan",
+    "type": "plan",
+    "url": "https://www.amsterdam.nl/",
+    "queries": [
+      "Amsterdam strategic plan PDF",
+      "Amsterdam government plan PDF"
+    ],
+    "location": {
+      "city": "Amsterdam",
+      "region": "North Holland",
+      "country": "Netherlands",
+      "lat": 52.3676,
+      "lng": 4.9041
+    }
+  }
+]

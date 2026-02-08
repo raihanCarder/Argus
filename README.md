@@ -22,6 +22,7 @@ cd backend
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+cp ../.env.example .env
 uvicorn main:app --reload --port 8000
 ```
 
@@ -30,10 +31,17 @@ uvicorn main:app --reload --port 8000
 ```bash
 cd frontend
 npm install
+cp ../.env.example .env.local
 npm run dev
 ```
 
 Open `http://localhost:3000`.
+
+## Scrape Signals
+
+Signals are collected in real-time when the backend receives a `/match` request.
+
+This pipeline now uses Gemini directly for signal intelligence and link discovery from the startup description. Ensure `GOOGLE_API_KEY` is set in `.env`.
 
 ## Environment Setup
 

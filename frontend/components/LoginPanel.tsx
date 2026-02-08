@@ -102,8 +102,8 @@ export function LoginPanel() {
           <>
             <label className="block text-xs text-cyber-cyan/70">
               Email
-              <div className="mt-2 flex items-center gap-2 rounded border border-cyber-cyan/30 bg-black/40 px-3 py-2">
-                <span className="text-cyber-cyan/60">👤</span>
+              <div className="mt-2 flex items-center gap-2 rounded border border-cyber-cyan/40 bg-[#03070f] px-3 py-2 shadow-[0_0_18px_rgba(0,217,255,0.12)]">
+                <span className="text-cyber-cyan/60">●</span>
                 <input
                   type="email"
                   className="w-full bg-transparent text-xs text-white placeholder:text-white/40 focus:outline-none"
@@ -115,8 +115,8 @@ export function LoginPanel() {
             </label>
             <label className="block text-xs text-cyber-cyan/70">
               Password
-              <div className="mt-2 flex items-center gap-2 rounded border border-cyber-cyan/30 bg-black/40 px-3 py-2">
-                <span className="text-cyber-cyan/60">🔒</span>
+              <div className="mt-2 flex items-center gap-2 rounded border border-cyber-cyan/40 bg-[#03070f] px-3 py-2 shadow-[0_0_18px_rgba(0,217,255,0.12)]">
+                <span className="text-cyber-cyan/60">●</span>
                 <input
                   type="password"
                   className="w-full bg-transparent text-xs text-white placeholder:text-white/40 focus:outline-none"

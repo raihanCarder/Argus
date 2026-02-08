@@ -33,11 +33,11 @@ export function AIChat({
   return (
     <HUDPanel title="AI Assistant" subtitle="Argus search system online">
       <div className="space-y-3">
-        <div className="rounded border border-cyber-cyan/20 bg-black/40 p-3 text-xs text-white/80">
-          Hello, how can I assist you?
+        <div className="rounded border border-cyber-cyan/30 bg-[#03070f] p-3 text-xs text-white/80 shadow-[0_0_18px_rgba(0,217,255,0.12)]">
+          Earth monitoring system online. How can I assist you?
           <div className="mt-2 text-[10px] text-white/40">{openedAt}</div>
         </div>
-        <div className="rounded border border-cyber-cyan/20 bg-black/30 px-3 py-2">
+        <div className="rounded border border-cyber-cyan/30 bg-[#03070f] px-3 py-2 shadow-[0_0_18px_rgba(0,217,255,0.12)]">
           <textarea
             className="w-full resize-none bg-transparent text-xs text-white placeholder:text-white/50 focus:outline-none"
             rows={3}

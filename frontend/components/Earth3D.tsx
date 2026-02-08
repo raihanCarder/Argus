@@ -15,11 +15,14 @@ export interface EarthSignal {
   title: string;
   city: string;
   state: string;
+  region?: string;
+  country?: string;
   category: string;
   description: string;
-  budget: number;
+  budget: number | null;
   timeline: string;
   stakeholders: string[];
+  source_url?: string;
 }
 
 type GlobeStatus = "initializing" | "stable" | "offline";

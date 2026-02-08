@@ -4,12 +4,15 @@ export type Signal = {
   lng: number;
   city: string;
   state: string;
+  region?: string;
+  country?: string;
   category: string;
   title: string;
   description: string;
-  budget: number;
+  budget: number | null;
   timeline: string;
   stakeholders: string[];
+  source_url?: string;
 };
 
 export type MatchResult = {
@@ -22,8 +25,11 @@ export type MatchResponse = {
   matches: MatchResult[];
 };
 
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_URL?.replace(/\/$/, "") || "http://localhost:8000";
+
 export async function matchStartup(startupDescription: string) {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/match`, {
+  const response = await fetch(`${API_BASE}/match`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ startup_description: startupDescription }),

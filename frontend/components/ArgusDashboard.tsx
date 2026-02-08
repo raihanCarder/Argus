@@ -117,20 +117,27 @@ export function ArgusDashboard() {
   };
 
   return (
-    <main className="relative min-h-screen bg-cyber-blue text-white overflow-hidden">
-      <div className="absolute inset-0 hud-grid opacity-30" />
-      <div className="absolute inset-x-0 top-0 h-full scanline opacity-40" />
+    <main className="relative min-h-screen text-white overflow-hidden">
+      <div className="absolute inset-0 hud-grid opacity-50" />
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute left-8 top-8 h-2 w-20 border-t border-cyber-cyan/50" />
+        <div className="absolute right-10 top-10 h-2 w-24 border-t border-cyber-cyan/50" />
+        <div className="absolute left-8 bottom-10 h-2 w-24 border-b border-cyber-cyan/50" />
+        <div className="absolute right-10 bottom-8 h-2 w-20 border-b border-cyber-cyan/50" />
+        <div className="glitch-line" />
+      </div>
+      <div className="absolute inset-x-0 top-0 h-full scanline opacity-35" />
 
       <header className="relative z-10 flex items-center justify-between px-10 py-6">
         <div>
-          <div className="hud-title text-xs text-cyber-cyan">ARGUS</div>
+          <div className="hud-title text-xs text-cyber-cyan hud-text-glow">ARGUS</div>
           <div className="text-[10px] text-white/50">
             Matches startups to relevant government signals in real-time.
           </div>
         </div>
         <div className="flex items-center gap-6 text-[10px] hud-mono text-white/60">
           <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-cyber-cyan shadow-[0_0_8px_rgba(0,217,255,0.8)]" />
+            <span className="hud-dot" />
             {isLoading ? "Searching" : "Tracking"}
           </div>
           <div>Signals: {signals.length}</div>
@@ -151,16 +158,13 @@ export function ArgusDashboard() {
         </aside>
 
         <section className="relative flex h-full flex-col items-center justify-center">
-          <div className="absolute top-2 text-center">
-            <div className="text-3xl font-semibold tracking-[0.2em] text-cyber-cyan hud-title">
-              ARGUS
-            </div>
-          </div>
           <div className="h-full w-full">
             <Earth3D signals={signals} onSignalClick={handleSignalClick} />
           </div>
-          <div className="absolute bottom-4 text-[10px] text-white/40 hud-mono">
-            Click signal points for government details
+          <div className="absolute bottom-6 flex w-full items-center justify-between px-6 text-[10px] text-white/50 hud-mono">
+            <div>LAT: 40.7128° N</div>
+            <div>LONG: 74.0060° W</div>
+            <div className="text-cyber-cyan/70">STABLE</div>
           </div>
         </section>
 
@@ -168,7 +172,7 @@ export function ArgusDashboard() {
           {activeMatch ? (
             <HUDPanel
               title="Signal Detail"
-              subtitle={`${activeMatch.signal.city}, ${activeMatch.signal.state} · ${activeMatch.signal.category}`}
+              subtitle={`${activeMatch.signal.city || activeMatch.signal.country || "Unknown"}${activeMatch.signal.state ? `, ${activeMatch.signal.state}` : ""} · ${activeMatch.signal.category}`}
             >
               <div className="space-y-4 text-sm">
                 <div className="text-lg font-semibold text-white">
@@ -181,7 +185,9 @@ export function ArgusDashboard() {
                   <div>
                     <div className="text-white/40">Budget</div>
                     <div className="hud-mono text-white">
-                      ${(activeMatch.signal.budget / 1000000).toFixed(1)}M
+                      {activeMatch.signal.budget
+                        ? `$${(activeMatch.signal.budget / 1000000).toFixed(1)}M`
+                        : "N/A"}
                     </div>
                   </div>
                   <div>
