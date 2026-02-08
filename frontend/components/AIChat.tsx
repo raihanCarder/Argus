@@ -23,8 +23,11 @@ export function AIChat() {
           How can I assist you?
           <div className="mt-2 text-[10px] text-white/40">{openedAt}</div>
         </div>
-        <div className="rounded border border-cyber-cyan/20 bg-black/30 px-3 py-2 text-xs text-white/50">
-          Type a message...
+        <div className="rounded border border-cyber-cyan/20 bg-black/30 px-3 py-2">
+          <input
+            className="w-full bg-transparent text-xs text-white placeholder:text-white/50 focus:outline-none"
+            placeholder="Type a message..."
+          />
         </div>
         <div className="flex justify-end">
           <button className="rounded border border-cyber-cyan/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-cyber-cyan">
