@@ -2,6 +2,8 @@
 
 Argus is a GovTech intelligence platform that helps startups surface government opportunities before they hit the RFP stage. A user describes their startup, the backend collects live signals with caching and fallback, and the UI ranks the best matches on a globe with clear, actionable details.
 
+Like to see our project? Click here: https://devpost.com/software/argus-uipa2c
+
 ## 🚀 Features
 
 - Startup → signal matching (semantic + keyword hybrid, with keyword‑only fallback).
@@ -16,6 +18,11 @@ Argus is a GovTech intelligence platform that helps startups surface government 
 - **Frontend:** Next.js (App Router), React, Tailwind CSS, Three.js, Framer Motion
 - **Backend:** FastAPI, Uvicorn, Gemini API (embeddings + generation), scikit‑learn
 - **Auth:** Firebase
+
+## 📸 Screenshots
+
+![Dashboard](assets/argus_dashboard.png)
+![Landing Page](assets/argus_landingpage.png)
 
 ## 💨 Quick Start
 
