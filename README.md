@@ -2,7 +2,8 @@
 
 Argus is a GovTech intelligence platform that helps startups surface government opportunities before they hit the RFP stage. A user describes their startup, the backend collects live signals with caching and fallback, and the UI ranks the best matches on a globe with clear, actionable details.
 
-Like to see our project? Click here: https://devpost.com/software/argus-uipa2c
+**Live Demo**: https://argus-macathon.vercel.app/  
+**Devpost**: https://devpost.com/software/argus-uipa2c
 
 ## 🚀 Features
 
